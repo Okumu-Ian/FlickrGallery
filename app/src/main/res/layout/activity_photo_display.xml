@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoDisplay"
+    android:gravity="center"
+    android:id="@+id/display_layout"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:id="@+id/img_photo_display"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="150dip"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dip"
+        android:id="@+id/display_layout_r"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:id="@+id/fab_previous"
+            android:src="@drawable/ic_left"
+            app:tint="@android:color/white"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dip"
+            android:id="@+id/fab_next"
+            android:src="@drawable/ic_right"
+            app:tint="@android:color/white"
+           />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="5dip"
+            android:weightSum="3">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/share"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:id="@+id/btn_share"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delete"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:background="@color/colorAccent"
+                android:id="@+id/btn_delete"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/save_to_phone"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:id="@+id/btn_save"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

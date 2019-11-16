@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FlickrGallery</string>
+    <string name="image_title">Image Title</string>
+    <string name="save_to_phone">Save To Phone</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+    <string name="file_jpg_enter_file_name_here">File.jpg (Enter File Name Here)</string>
+</resources>
